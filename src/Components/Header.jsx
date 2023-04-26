@@ -1,5 +1,5 @@
 import { ShoppingCartIcon } from '@heroicons/react/24/solid';
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 const Header = () => {
@@ -24,7 +24,7 @@ const Header = () => {
               </svg>
             </div>
             <span className='ml-2 text-xl font-bold tracking-wide text-gray-800 '>
-              HeroGadget
+              EcleecticElegance
             </span>
           </Link>
           <ul className='items-center hidden space-x-8 lg:flex'>
