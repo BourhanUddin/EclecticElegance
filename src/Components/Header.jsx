@@ -24,7 +24,7 @@ const Header = () => {
               </svg>
             </div>
             <span className='ml-2 text-xl font-bold tracking-wide text-gray-800 '>
-              EcleecticElegance
+              EclecticElegance
             </span>
           </Link>
           <ul className='items-center hidden space-x-8 lg:flex'>
