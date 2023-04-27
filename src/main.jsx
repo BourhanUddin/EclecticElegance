@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import App from './App.jsx'
 import About from './Components/About.jsx'
+import Cart from './Components/Cart.jsx'
 import ErrorPage from './Components/ErrorPage.jsx'
 import Home from './Components/Home.jsx'
 import Shop from './Components/Shop.jsx'
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
         path:'/shop',
         element: <Shop></Shop>,
         loader:()=> fetch('products.json'),
+      },
+      {
+        path:'/cart',
+        element: <Cart></Cart>
       }
     ]
   },
