@@ -2,6 +2,8 @@ import React from 'react';
 
 const CardItem = ({product}) => {
     const { id, name, price, quantity, picture } = product
+    // console.log(price);
+    console.log(quantity);
     return (
       <li className='flex flex-col py-6 sm:flex-row sm:justify-between'>
         <div className='flex w-full space-x-2 sm:space-x-4'>
