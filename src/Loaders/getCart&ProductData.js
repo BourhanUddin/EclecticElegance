@@ -5,14 +5,18 @@ export const productAndCartData = async()=>{
     const products = await productsData.json()
     const savedCart = getStoredCart()
     let cartArr = []
+
     for (const id in savedCart){
         const foundProduct = products.find(product => product.id === id)
         if(foundProduct){
-            foundProduct.qauntity = savedCart[id]
+            foundProduct.quantity = savedCart[id]
             cartArr.push(foundProduct)
+            // console.log(foundProduct);
+            
         }
     }
     return {cartArr, products}
+    
 }
 
 // export default productAndCartData

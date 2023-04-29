@@ -13,8 +13,8 @@ const addToDb = id =>{
     const quantity = shoppingCart[id]//acces quantity from shopping-card in localstorage
     
     if(quantity){
-        const newQuantity = quantity + 1 ;
-        shoppingCart[id] = newQuantity
+        const newquantity = quantity + 1 ;
+        shoppingCart[id] = newquantity
     }
     else{
 

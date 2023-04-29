@@ -4,13 +4,14 @@ import CardItem from "./Cards/CardItem";
 
 const Cart = () => {
   const { cartArr } = useLoaderData();
-  //    console.log(cartArr);
+     console.log(cartArr);
   let totalCost = 0;
   if (cartArr.length > 0) {
     for (const product of cartArr) {
       totalCost = totalCost + product.price * product.quantity;
     }
   }
+
 
   return (
     <div className="flex min-h-screen items-start justify-center bg-gray-100 text-gray-900">
@@ -23,7 +24,7 @@ const Cart = () => {
             <CardItem key={product.id} product={product}></CardItem>
           ))}
         </ul>
-        {/* <p>{totalCost}</p> */}
+        <p>{totalCost}</p>
       </div>
     </div>
   );
